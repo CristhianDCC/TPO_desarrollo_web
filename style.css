@@ -1,0 +1,47 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: left;
+    background-color: blue;
+    height: 8vh;
+    align-items: center;
+
+}
+
+/*Aplicar estilos a  todo lo que contiene ul*/
+.flex-container ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+/*Se le asignan margenes a los textos dentro de <a>*/
+ul li{
+    margin: 1rem;
+
+}
+
+/*Estilos de a*/
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Logo */
+.logo{
+    height: 8vh;
+    width: 6vw;
+    margin: 3rem;
+   
+}
+
+
+
+/****** Continuar   ******/
