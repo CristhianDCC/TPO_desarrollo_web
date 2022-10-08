@@ -9,9 +9,10 @@ html{
 .flex-container{
     display: flex;
     justify-content: left;
-    background-color: blue;
-    height: 8vh;
+    background-color: rgb(44, 44, 247);
+    height: 6vh;
     align-items: center;
+    margin-top: 2rem;
 
 }
 
@@ -22,10 +23,56 @@ html{
     font-size: 2rem;
 }
 
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,60rem);
+    grid-template-rows: repeat(4,40rem);
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+
+.grid-items{
+    background-color: rgb(194, 192, 192);
+    border-radius: 2rem;
+
+}
+
+#principal{
+    grid-column-start: 1;
+    grid-column-end:3 ;
+    grid-row-start:1 ;
+    grid-row-end:3 ;
+}
+
+#notSec1{
+    grid-column-start: 1;
+    grid-column-end:2 ;
+    grid-row-start:3 ;
+    grid-row-end:4 ;
+}
+
+#notSec2{
+    grid-column-start: 1;
+    grid-column-end:2 ;
+    grid-row-start:4 ;
+    grid-row-end:5 ;
+}
+
+#tablaPos{
+    grid-column-start: 2;
+    grid-column-end:3 ;
+    grid-row-start:3 ;
+    grid-row-end:5 ;
+}
+
+
+
+
 /*Se le asignan margenes a los textos dentro de <a>*/
 ul li{
-    margin: 1rem;
-
+    margin: 3rem;
 }
 
 /*Estilos de a*/
