@@ -4,16 +4,21 @@ html{
 
 *{
     margin: 0;
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+
+}
+body{
+    background-color: #0B132B;
 }
 
 .flex-container{
     display: flex;
     justify-content: left;
-    background-color: rgb(44, 44, 247);
     height: 6vh;
     align-items: center;
     margin-top: 2rem;
-
+    background-color: #5bc0be;
 }
 
 /*Aplicar estilos a  todo lo que contiene ul*/
@@ -25,16 +30,15 @@ html{
 
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(2,60rem);
-    grid-template-rows: repeat(4,40rem);
+    grid-template-columns: repeat(2,50rem);
+    grid-template-rows: repeat(4,30rem);
     gap: 2rem;
     justify-content: center;
     margin-top: 3rem;
-
 }
 
 .grid-items{
-    background-color: rgb(194, 192, 192);
+    background-color: #3A506B;
     border-radius: 2rem;
 
 }
@@ -45,12 +49,39 @@ html{
     grid-row-start:1 ;
     grid-row-end:3 ;
 }
+#videoPrincipal{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+
+}
+
+#principal h2{
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
 
 #notSec1{
     grid-column-start: 1;
     grid-column-end:2 ;
     grid-row-start:3 ;
     grid-row-end:4 ;
+    
+}
+
+#notSec1 h3{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+#notSec1 a{
+    text-decoration: none;
+}
+#notSec1 img{
+    height:240px;
+    width:500px;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 
 #notSec2{
@@ -66,6 +97,7 @@ html{
     grid-row-start:3 ;
     grid-row-end:5 ;
 }
+
 
 
 
@@ -90,7 +122,7 @@ ul li a{
 }
 
 footer{
-    background-color: rgb(44, 44, 247);
+    background-color: #5bc0be;
     color: white;
     width: 100%;
     left: 0;
@@ -128,5 +160,21 @@ footer{
     text-align: center;
 }
 
+
+/*Animaciones*/
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #1C2541;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after{
+    width: 100%;
+}
 
 /****** Continuar   ******/
