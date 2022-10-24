@@ -14,22 +14,24 @@
 <body>
     <header>
         <nav class="flex-container">
-            <a href="Home.html"><img class="logo" src="./img/png-transparent-drawing-others-sport-logo-sports-equipment.png" alt="logo"></a>
-                
-                <ul>
-                    <li><a href="Fútbol.html">Fútbol</a></li>
-                    <li><a href="Tenis">Tenis</a></li>
-                    <li><a href="Básquetbol">Básquetbol</a></li>
-                    <li><a href="Rugby">Rugby</a></li>
-                </ul>
+            
+            <!-- logo redirecciona a inicio -->
+            <a href="Home.html"><img class="logo" src="./img/logo.png" alt="logo"></a>
+
+            <ul class="menu">
+                <li><a href="Fútbol.html">Fútbol</a></li>
+                <li><a href="Basketball.html">Básquetbol</a></li>
+                <li><a href="formulario.html">Noticias</a></li>
+            </ul>
 
         </nav>
+        
     </header>
     <main>
         <div class="grid-container">
             <div id="principal" class="grid-items">
-                <iframe id="videoPrincipal" width="1020" height="530" src="https://www.youtube.com/embed/TdlC-qnzOfs"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h2>El xeneize superó al verde en un partidazo y se encamina al titulo!</h2>
+                <iframe id="videoPrincipal" width="1020" height="530" src="https://www.youtube.com/embed/J8-piSixsfU"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2>¡EL MILLONARIO LE ARRUINÓ EL TÍTULO A LA ACADÉ!</h2>
             </div>
             <div id="notSec1" class="grid-items">
                 <a href="https://www.youtube.com/watch?v=YCT3tRfKseE"><img src="img/gallardo-se-va.jpg" alt="gallardo-se-va"></a>
@@ -37,9 +39,43 @@
             </div>
             <div id="notSec2" class="grid-items">noticia secundaria 2</div>
                 <a href=""><img src="" alt=""></a>
-            <div id="tablaPos" class="grid-items">tabla de posiciones</div>
+            <div id="tablaPos" class="grid-items">
+                <div id="divTabla">
+                    <table class="tabla_pos_fut">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Equipo</th>
+                                <th>Pts.</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
                 <a href=""><img src="" alt=""></a>
         </div>
     </main>
+    <footer class="flex_container_footer">
+
+        <div class="div_1">
+            <a href="Home.html"><img class="logo_footer" src="./img/logo.png" alt="logo"></a>
+            <br>
+            <p><i id="logos" class="fa-brands fa-twitter"></i><i id="logos" class="fa-brands fa-facebook"></i><i id="logos" class="fa-brands fa-pinterest"></i><i id="logos" class="fa-brands fa-instagram"></i></p>
+        </div>
+
+        <div class="div_2">
+            <a href="Home">Home</a>
+            <br>
+            <a href="Fútbol.html">Fútbol</a>
+            <br>
+            <a href="Basketball.html">Básquetbol</a>
+            <br>
+            <a href="formulario.html">Noticias</a>
+        </div>
+    </footer>
+    <script src="futbol.js"></script>
 </body>
 </html>

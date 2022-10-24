@@ -19,13 +19,12 @@
         <nav class="flex-container">
             
             <!-- logo redirecciona a inicio -->
-            <a href="Home.html"><img class="logo" src="./img/png-transparent-drawing-others-sport-logo-sports-equipment.png" alt="logo"></a>
-            
-            <ul>
+            <a href="Home.html"><img class="logo" src="./img/logo.png" alt="logo"></a>
+
+            <ul class="menu">
                 <li><a href="Fútbol.html">Fútbol</a></li>
-                <li><a href="Tenis">Tenis</a></li>
-                <li><a href="Básquetbol">Básquetbol</a></li>
-                <li><a href="Rugby">Rugby</a></li>
+                <li><a href="Basketball.html">Básquetbol</a></li>
+                <li><a href="formulario.html">Noticias</a></li>
             </ul>
 
         </nav>
@@ -34,15 +33,30 @@
     <main>
         <div class="grid-container">
             <div id="principal" class="grid-items">
-                <iframe id="videoPrincipal" width="1020" height="530" src="https://www.youtube.com/embed/Hil4nKOwi6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h2>Racing le ganó 2-0 a Colón en Santa Fe y quedó a un punto del líder Boca</h2>
+                <iframe id="videoPrincipal" width="1020" height="530" src="https://www.youtube.com/embed/tjeB3owr6X4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <a href="https://www.youtube.com/embed/tjeB3owr6X4"> <h2>¡BOCA SE QUEDÓ CON LA LIGA PROFESIONAL!</h2></a>
             </div>
             <div id="notSec1" class="grid-items">
                 <a href="https://www.youtube.com/watch?v=aIZ64themQM&ab_channel=ESPNDeportes"><img src="img/Federer-retiro.png" alt="Federer retiro"></a>
                 <a href="https://www.youtube.com/watch?v=aIZ64themQM&ab_channel=ESPNDeportes"><h3>Se retiró Roger Federer</h3></a>
             </div>
             <div id="notSec2" class="grid-items">noticia secundaria 2</div>
-            <div id="tablaPos" class="grid-items">tabla de posiciones</div>
+            <div id="tablaPos" class="grid-items">
+                <div id="divTabla">
+                    <table class="tabla_pos_fut">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Equipo</th>
+                                <th>Pts.</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
 
 
@@ -50,21 +64,21 @@
     <footer class="flex_container_footer">
 
         <div class="div_1">
-            <a href="Home.html"><img class="logo_footer" src="./img/png-transparent-drawing-others-sport-logo-sports-equipment.png" alt="logo"></a>
+            <a href="Home.html"><img class="logo_footer" src="./img/logo.png" alt="logo"></a>
             <br>
             <p><i id="logos" class="fa-brands fa-twitter"></i><i id="logos" class="fa-brands fa-facebook"></i><i id="logos" class="fa-brands fa-pinterest"></i><i id="logos" class="fa-brands fa-instagram"></i></p>
         </div>
 
         <div class="div_2">
+            <a href="Home">Home</a>
+            <br>
             <a href="Fútbol.html">Fútbol</a>
             <br>
-            <a href="Tenis">Tenis</a>
+            <a href="Basketball.html">Básquetbol</a>
             <br>
-            <a href="Básquetbol">Básquetbol</a>
-            <br>
-            <a href="Rugby">Rugby</a>
+            <a href="formulario.html">Noticias</a>
         </div>
     </footer>
-
+    <script src="futbol.js"></script>
 </body>
 </html>
