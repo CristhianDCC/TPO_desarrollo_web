@@ -325,7 +325,7 @@ footer a:hover::before {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 103%;
     height: 1px;
     background-color:white;
     transform: scale(0);
@@ -334,7 +334,7 @@ footer a:hover::before {
 }
 
 .form_input:focus ~ .form_line,
-.form_input:not(:placeholder-shown) + .form_line{
+.form_input:not(:placeholder-shown) ~ .form_line{
     transform: scale(1);
 
 }
