@@ -392,6 +392,16 @@ footer a:hover::before {
         width: 400px;
         height: 260px;
     }
+    #notSec1 h3{
+        font-size: 1.2rem;
+        margin-top: 0rem; 
+        margin-left: 1.5rem;
+    }
+    #notSec2 h3{
+        font-size: 1.2rem;
+        margin-top: 0rem;  
+        margin-left: 1.5rem;  
+    }
     .tabla_pos_fut{
         border-radius: 2rem;
         border-collapse: separate;
@@ -465,4 +475,4 @@ footer a:hover::before {
 
 }
 
-/****** Continuar   ******/
+
