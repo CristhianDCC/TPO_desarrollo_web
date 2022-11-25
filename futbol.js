@@ -1,4 +1,4 @@
-const apiUrl="https://allsportsapi.com/api/football/?&met=Standings&leagueId=11&APIkey=e102c4ca30abf4a743921f46cb2b8d88cb0c91e72fce3589d47bfb5dd95d4558";
+const apiUrl="https://allsportsapi.com/api/football/?&met=Standings&leagueId=11&APIkey=974962bef8ca02e68bf1b2383a2d172848684e4f8474e4122fe40babfc19bd83";
 
 async function tablaPos(){
     const response=await fetch(apiUrl)
